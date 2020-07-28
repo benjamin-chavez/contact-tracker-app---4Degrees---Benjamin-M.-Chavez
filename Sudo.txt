@@ -1,0 +1,11 @@
+Python Backend:
+  - Create a virtual environment and set up a flask application
+  - Set up a RESTful API with POST and Delete Requests
+  - POST request must have the following data chacking:
+      - There is some kind of name and email address
+      - The email address must be of the format *@* (some string with an @ sign with characters before and after it)
+
+JS Frontend:
+  - Build out a simple html Index with bootstrap
+  - Build out Vanilla JS functionality for adding and deleting contacts
+  - Build route handler to send requests to the api onClick of add and delete buttons
