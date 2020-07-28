@@ -1,11 +1,31 @@
 from flask import Flask, request
 from flask_restful import Resource, Api, reqparse
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
 api = Api(app)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
+
+contacts = [
+    {
+        "name": "benny",
+        "email": "email@ymail.com",
+        "note": "no notes"
+    },
+    {
+        "name": "andrew",
+        "email": "andrew@ymail.com",
+        "note": "andrew rocks"
+    },
+]
 
 
+@cross_origin()
 class Contacts(Resource):
+    def get(self):
+        return {'contacts': contacts}
+
     def post(self):
         parser = reqparse.RequestParser()
         parser.add_argument('name',
