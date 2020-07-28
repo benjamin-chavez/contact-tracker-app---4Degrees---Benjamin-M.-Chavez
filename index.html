@@ -16,39 +16,34 @@
         <h5>You have no contacts</h5>
       </div>
     </div>
-    <div class="row">
-      <div class="col-3 mx-auto text-center"><strong>Name</strong></div>
-      <div class="col-3 mx-auto text-center"><strong>Email</strong></div>
-      <div class="col-4 mx-auto text-center"><strong>Note</strong></div>
-      <div class="col-2 mx-auto text-center"><strong></strong></div>
-    </div>
-    <div class="row pt-2 form-group">
-      <input id="name" type="text" class="form-control col-3 mx-auto">
-      <input id="email" type="text" class="form-control col-3 mx-auto">
-      <input id="note" type="text" class="form-control col-3 mx-auto">
-      <div class="col-2 mx-auto text-center">
-        <div id="addContact" class="btn btn-sm btn-info">Add Contact</div>
+    <div id="contactList">
+      <div class="row ">
+        <div class="col-3 mx-auto text-center"><strong>Name</strong></div>
+        <div class="col-3 mx-auto text-center"><strong>Email</strong></div>
+        <div class="col-4 mx-auto text-center"><strong>Note</strong></div>
+        <div class="col-2 mx-auto text-center"><strong></strong></div>
       </div>
-    </div>
-    <div class="row pt-2">
-      <div class="col-3 mx-auto text-center">Ben Chavez</div>
-      <div class="col-3 mx-auto text-center">bchavez@ymail.com</div>
-      <div class="col-4 mx-auto text-center">Ben is not sick!</div>
-      <div class="col-2 mx-auto text-center">
-        <div class="btn btn-sm btn-primary">Delete</div>
+      <div class="row pt-2 form-group border-bottom py-2">
+        <input id="name" type="text" class="form-control col-3 mx-auto">
+        <input id="email" type="text" class="form-control col-3 mx-auto">
+        <input id="note" type="text" class="form-control col-3 mx-auto">
+        <div class="col-2 mx-auto text-center">
+          <div id="addContact" class="btn btn-sm btn-info">Add Contact</div>
+        </div>
       </div>
+      <!-- <div class="row border-bottom my-1">
+        <div class="col-3 mx-auto text-center">Ben Chavez</div>
+        <div class="col-3 mx-auto text-center">bchavez@ymail.com</div>
+        <div class="col-4 mx-auto text-center">Ben is not sick!</div>
+        <div class="col-2 mx-auto text-center ">
+          <button class="btn btn-sm btn-primary delete-btn align-text-bottom">Delete</button>
+        </div>
+      </div> -->
+
     </div>
-    <hr>
-    <div class="row pt-2">
-      <div class="col-3 mx-auto text-center">Ben Chavez</div>
-      <div class="col-3 mx-auto text-center">bchavez@ymail.com</div>
-      <div class="col-4 mx-auto text-center">Ben is not sick!</div>
-      <div class="col-2 mx-auto text-center">
-        <div class="btn btn-sm btn-primary">Delete</div>
-      </div>
-    </div>
-    <hr>
   </div>
+
+  <script src="/app.js"></script>
 </body>
 
 </html>
